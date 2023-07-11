@@ -119,20 +119,20 @@ const checkoutDOM = document.querySelector('.btn--buy')
 
     //Eventos
     productsDOM.addEventListener('click', function (e){
-        if(e.target.closest('.add--to--cart')){
-                const id = +e.target.closest('.add--to--cart').dataset.id
+        if(e.target.closest('.add--to-cart')){
+                const id = +e.target.closest('.add--to-cart').dataset.id
                 addToCart(id)
         }
     })
 
     cartDOM.addEventListener('click', function (e) {
-        if(e.target.closest('.article--minus')){
-            const id = +e.target.closest('.article--minus').dataset.id
+        if(e.target.closest('.article-minus')){
+            const id = +e.target.closest('.article-minus').dataset.id
             removeFromCart(id)
         }
     
-        if(e.target.closest('.article--plus')){
-        const id = +e.target.closest('.article--plus').dataset.id
+        if(e.target.closest('.article-plus')){
+        const id = +e.target.closest('.article-plus').dataset.id
         addToCart(id)
         }
 

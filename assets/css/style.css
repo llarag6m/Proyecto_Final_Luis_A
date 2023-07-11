@@ -294,6 +294,9 @@ font-size: 1.25rem;
     overflow: hidden;
     border-radius: 20px;
     border: 3px double #000;
+    align-content: flex-end;
+    align-items: flex-end;
+    align-self: start;
 }
 
 .product__image {
@@ -318,6 +321,7 @@ font-size: 1.25rem;
     padding: var(--sp-1-5);
     min-height: 100px;
     box-shadow: 0px 0px 50px 0px black;
+    ;
 }
 
 .product__btn {
