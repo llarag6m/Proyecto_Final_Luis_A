@@ -8,8 +8,7 @@
     <script src="assets/js/main.js" type="module" defer></script>
 </head>
 
-<body class="dark--mode">
-
+<body>
 
     <form class="form">
         <div class="container">
@@ -18,7 +17,13 @@
             <input type="email" class="form__input" placeholder="Correo:">
            <textarea class="form__input form__input--mensaje" placeholder="Mensaje:" cols="30" rows="10"></textarea>
 
-            <input type="submit" value="Enviar" class="form__btn">
+<script>
+    function mensaje(){  
+        window.alert('Mensaje enviado nos pondremos en contacto contigo')
+    }
+</script>
+
+            <input type="submit" onclick="mensaje();" value="Enviar" class="form__btn" >
         </div>
     </form>
 </body>
