@@ -10,7 +10,8 @@ body{
     justify-content: center;
     align-items: center;
     min-height: 100vh;
-    background-color: black;
+    background-repeat: no-repeat;
+    background-color: darkgrey;
 }
 
 .box{
@@ -78,7 +79,7 @@ body{
 
 .inputBox{
   position: relative;
-  width: 300px;  
+  width: 400px;  
   margin-top: 45px;
 }
 
@@ -96,7 +97,7 @@ body{
 }
 
 .inputBox span{
-    position: absolute;
+    position:absolute;
     left: 0;
     padding: 20px 10px 10px;
     font-size: 1em;
@@ -134,18 +135,21 @@ body{
 .link{
     display: flex;
     justify-content: space-between;
+    margin-top: 50px;
 }
 
 .link a{
     margin: 10px 0;
-    font-size: 0.75em;
+    font-size: 1.2em;
     color:aliceblue;
     text-decoration: none;
 }
 
 .link a:hover,
 .link a:nth-child(2){
-    color: #45f3ff ;
+    color: #45f3ff;
+    font-size: 20px;
+    
 }
 
 input[type = "submit"]{
@@ -158,8 +162,14 @@ input[type = "submit"]{
     border-radius: 4px;
     font-weight: 600;
     cursor: pointer;
+    margin-top: 4%;
+    align-self: center;
 }
 
 input[type = "submit"]:active{
     opacity: 0.4;
+}
+
+.inputBox{
+    border: 1px solid #45f3ff;
 }
